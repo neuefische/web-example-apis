@@ -1,0 +1,147 @@
+[
+  {
+    "id": 0,
+    "name": "Butter",
+    "category": "Milchprodukte"
+  },
+  {
+    "id": 1,
+    "name": "Brot",
+    "category": "Backwaren"
+  },
+  {
+    "id": 2,
+    "name": "Käse",
+    "category": "Milchprodukte"
+  },
+  {
+    "id": 3,
+    "name": "Salat",
+    "category": "Gemüse"
+  },
+  {
+    "id": 4,
+    "name": "Paprika",
+    "category": "Gemüse"
+  },
+  {
+    "id": 5,
+    "name": "Schnittlauch",
+    "category": "Gemüse"
+  },
+  {
+    "id": 6,
+    "name": "Tomaten",
+    "category": "Gemüse"
+  },
+  {
+    "id": 7,
+    "name": "Hafermilch",
+    "category": "Getränke"
+  },
+  {
+    "id": 8,
+    "name": "Tomaten",
+    "category": "Gemüse"
+  },
+  {
+    "id": 9,
+    "name": "Nüsse",
+    "category": "Snacks"
+  },
+  {
+    "id": 10,
+    "name": "Joghurt",
+    "category": "Milchprodukte"
+  },
+  {
+    "id": 11,
+    "name": "Karotten",
+    "category": "Gemüse"
+  },
+  {
+    "id": 12,
+    "name": "Zwiebeln",
+    "category": "Gemüse"
+  },
+  {
+    "id": 13,
+    "name": "Oliven",
+    "category": "Gemüse"
+  },
+  {
+    "id": 14,
+    "name": "Kürbis",
+    "category": "Gemüse"
+  },
+  {
+    "id": 15,
+    "name": "Tee",
+    "category": "Getränke"
+  },
+  {
+    "id": 16,
+    "name": "Bier",
+    "category": "Getränke"
+  },
+  {
+    "id": 17,
+    "name": "Breze",
+    "category": "Backwaren"
+  },
+  {
+    "id": 18,
+    "name": "Halver Hahn",
+    "category": "Backwaren"
+  },
+  {
+    "id": 19,
+    "name": "Obazda",
+    "category": "Milchprodukte"
+  },
+  {
+    "id": 20,
+    "name": "Himmel und Ääd",
+    "category": "WTF"
+  },
+  {
+    "id": 21,
+    "name": "Haxn",
+    "category": "Fleisch"
+  },
+  {
+    "id": 22,
+    "name": "Bier",
+    "category": "Getränke"
+  },
+  {
+    "id": 23,
+    "name": "Cola",
+    "category": "Getränke"
+  },
+  {
+    "id": 24,
+    "name": "Dampfnudeln",
+    "category": "Teigwaren"
+  },
+  {
+    "id": 25,
+    "name": "Weißwurscht",
+    "category": "Fleisch"
+  },
+  {
+    "id": 26,
+    "name": "Maultaschen",
+    "category": "Fleisch"
+  },
+  {
+    "id": 27,
+    "name": "Spätzle",
+    "category": "Teigwaren"
+  },
+  {
+    "id": 28,
+    "name": "Hexenpfännsche",
+    "category": "Fleisch"
+  }
+]
