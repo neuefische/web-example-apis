@@ -1,0 +1,23 @@
+{
+  "name": "fetch-me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djfarly/fetch-me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djfarly/fetch-me/issues"
+  },
+  "homepage": "https://github.com/djfarly/fetch-me#readme",
+  "dependencies": {
+    "@vercel/node": "^1.12.1"
+  }
+}
