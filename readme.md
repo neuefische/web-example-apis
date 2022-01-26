@@ -4,22 +4,28 @@
 
 ## 🙄 Bad Jokes
 
+### `GET` `/bad-jokes`
+
 Retrieve a list of bad jokes:
 
 ```
-GET https://fetch-me.vercel.app/bad-jokes.json
+https://fetch-me.vercel.app/bad-jokes.json
 ```
 
 ## 🛒 Shopping Items
 
+### `GET` `/api/shopping/categories`
+
 Retrieve a list of shopping categories:
 
 ```
-GET https://fetch-me.vercel.app/api/shopping/categories
+https://fetch-me.vercel.app/api/shopping/categories
 ```
+
+### `GET` `/api/shopping/items`
 
 Retrieve a list of shopping items:
 
 ```
-GET https://fetch-me.vercel.app/api/shopping/items
+https://fetch-me.vercel.app/api/shopping/items
 ```
