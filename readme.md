@@ -2,14 +2,18 @@
 
 ✨ Easy to fetch example APIs made for training purposes.
 
+## 🎲 Status
+
+###
+
 ## 🙄 Bad Jokes
 
-### `GET` `/bad-jokes`
+### `GET` `/api/bad-jokes`
 
 Retrieve a list of bad jokes:
 
 ```
-https://fetch-me.vercel.app/bad-jokes.json
+https://example-apis.vercel.app/api/bad-jokes
 ```
 
 ## 🛒 Shopping Items
@@ -19,7 +23,7 @@ https://fetch-me.vercel.app/bad-jokes.json
 Retrieve a list of shopping categories:
 
 ```
-https://fetch-me.vercel.app/api/shopping/categories
+https://example-apis.vercel.app/api/shopping/categories
 ```
 
 ### `GET` `/api/shopping/items`
@@ -27,5 +31,5 @@ https://fetch-me.vercel.app/api/shopping/categories
 Retrieve a list of shopping items:
 
 ```
-https://fetch-me.vercel.app/api/shopping/items
+https://example-apis.vercel.app/api/shopping/items
 ```
