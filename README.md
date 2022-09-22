@@ -2,6 +2,8 @@
 
 ✨ Easy to fetch example APIs made for training purposes.
 
+[🔗 GitHub Repository](https://github.com/neuefische/web-example-apis)
+
 ## 🎲 Status
 
 ### `GET` `/api/status`
