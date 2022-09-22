@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example APIs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css"
+    />
+  </head>
+  <body style="margin: 0">
+    <div
+      id="content"
+      class="markdown-body"
+      style="padding: 2rem; min-height: 100vh"
+    ></div>
+    <script type="module">
+      import { marked } from 'https://cdn.jsdelivr.net/npm/marked@4.1.0/lib/marked.esm.js';
+
+      (async () => {
+        const response = await fetch('/README.md');
+        const text = await response.text();
+        document.getElementById('content').innerHTML = marked(text);
+      })();
+    </script>
+  </body>
+</html>
