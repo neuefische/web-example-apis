@@ -24,6 +24,14 @@ Retrieve a list of bad jokes:
 https://example-apis.vercel.app/api/bad-jokes
 ```
 
+### `GET` `/api/bad-jokes/random`
+
+Retrieve a random bad joke:
+
+```
+https://example-apis.vercel.app/api/bad-jokes/random
+```
+
 ## 🛒 Shopping Items
 
 ### `GET` `/api/shopping/categories`
