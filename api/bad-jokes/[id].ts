@@ -10,8 +10,8 @@ export default (request: VercelRequest, response: VercelResponse) => {
     return response.status(404).json({ status: 'Not Found' });
   }
 
-  const nextId = jokes[jokeIndex + 1]?.id || jokes[0].id;
-  const prevId = jokes[jokeIndex - 1]?.id || jokes[jokes.length - 1].id;
+  const nextId = jokes[jokeIndex + 1]?.id ?? jokes[0].id;
+  const prevId = jokes[jokeIndex - 1]?.id ?? jokes[jokes.length - 1].id;
 
   response.status(200).json({ ...joke, nextId, prevId });
 };
