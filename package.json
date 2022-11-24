@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/djfarly/fetch-me#readme",
   "dependencies": {
-    "@vercel/node": "^2.5.15"
+    "@vercel/node": "^2.5.15",
+    "tumult": "^3.0.14"
   }
 }
