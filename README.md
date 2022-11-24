@@ -60,6 +60,8 @@ https://example-apis.vercel.app/api/shopping/items
 
 ## 🌤️ Weather
 
+### `GET` `/api/weather`
+
 Retrieve a seeded random weather based on the current hour:
 
 ```
