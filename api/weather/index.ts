@@ -15,7 +15,7 @@ export default (request: VercelRequest, response: VercelResponse) => {
   const samplePoint = seconds / secondsPerHour;
 
   // Generate sample
-  const seed = 'sunny weather';
+  const seed = 'adalskjdklas';
   const simplex = new Simplex1(seed);
   const sample = simplex.gen(samplePoint);
 

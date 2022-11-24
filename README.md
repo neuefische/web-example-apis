@@ -57,3 +57,11 @@ Retrieve a list of shopping items:
 ```
 https://example-apis.vercel.app/api/shopping/items
 ```
+
+## 🌤️ Weather
+
+Retrieve a seeded random weather based on the current hour:
+
+```
+https://example-apis.vercel.app/api/weather
+```
