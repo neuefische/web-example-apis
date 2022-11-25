@@ -62,8 +62,30 @@ https://example-apis.vercel.app/api/shopping/items
 
 ### `GET` `/api/weather`
 
-Retrieve a seeded random weather based on the current hour:
+Retrieve a seeded random weather for "europe" based on the current hour:
 
 ```
 https://example-apis.vercel.app/api/weather
+```
+
+### `GET` `/api/weather/[location]`
+
+Retrieve a seeded random weather for a location based on the current hour.
+
+Only the following locations are supported:
+
+```
+https://example-apis.vercel.app/api/weather/europe
+```
+
+```
+https://example-apis.vercel.app/api/weather/arctic
+```
+
+```
+https://example-apis.vercel.app/api/weather/sahara
+```
+
+```
+https://example-apis.vercel.app/api/weather/rainforest
 ```
