@@ -89,3 +89,13 @@ https://example-apis.vercel.app/api/weather/sahara
 ```
 https://example-apis.vercel.app/api/weather/rainforest
 ```
+
+## 🎨 Art
+
+### `GET` `/api/art`
+
+Retrieve a list of artworks:
+
+```
+https://example-apis.vercel.app/api/art
+```
