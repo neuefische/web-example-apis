@@ -3,9 +3,7 @@ import path from 'path';
 import artworks from '../../data/art';
 
 export default (request: VercelRequest, response: VercelResponse) => {
-  console.log(process.env.VERCEL_URL);
   const artworksWithUpdatedImageSource = artworks.map(artwork => {
-    console.log(artwork.imageSource);
     return {
       ...artwork,
       imageSource: `https://${path.join(
