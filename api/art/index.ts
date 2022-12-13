@@ -5,7 +5,6 @@ import artworks from '../../data/art';
 const baseUrl = process.env.HOSTNAME ?? process.env.VERCEL_URL!;
 
 export default (request: VercelRequest, response: VercelResponse) => {
-  console.dir(request.headers, { depth: 10 });
   const artworksWithUpdatedImageSource = artworks.map(artwork => {
     return {
       ...artwork,
