@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import path from 'path';
+import path from 'node:path';
 import artworks from '../../data/art';
 
 export default (request: VercelRequest, response: VercelResponse) => {
