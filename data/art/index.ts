@@ -109,4 +109,14 @@ export default [
     colors: ['#978e8b', '#2a201e', '#483833', '#d8d5d8', '#53443b'],
     dimensions: { height: 2880, width: 1920, type: 'jpg' },
   },
+  {
+    slug: 'intelligent-dolphin',
+    artist: 'Mareike and DALL-E',
+    name: 'Intelligent Dolphin',
+    imageSource: './assets/art/intelligent-dolphin.jpg',
+    year: '2024',
+    genre: 'DigitalArt',
+    colors: ['#978e8b', '#2a201e', '#483833', '#d8d5d8', '#53443b'],
+    dimensions: { height: 1024, width: 1024, type: 'jpg' },
+  },
 ];
