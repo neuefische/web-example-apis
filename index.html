@@ -20,7 +20,7 @@
       import { marked } from 'https://cdn.jsdelivr.net/npm/marked@4.1.0/lib/marked.esm.js';
 
       (async () => {
-        const response = await fetch('/README.md');
+        const response = await fetch('/docs.md');
         const text = await response.text();
         document.getElementById('content').innerHTML = marked(text);
       })();
