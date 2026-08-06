@@ -106,8 +106,8 @@ export default [
     imageSource: './assets/art/lovers.jpg',
     year: '2021',
     genre: 'Linoprint',
-    colors: ['#292A2B', '#565657', '#8B8379', '#B4ABA0', '#E9E9E6'],
-    dimensions: { height: 2493, width: 1920, type: 'jpg' },
+    colors: ['#29292A', '#3E3E42', '#585859', '#807F7F', '#CECCCA'],
+    dimensions: { height: 2679, width: 1920, type: 'jpg' },
   },
   {
     slug: 'umbilical-ambiguity',
