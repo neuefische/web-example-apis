@@ -100,16 +100,6 @@ export default [
     dimensions: { height: 2608, width: 1920, type: 'jpg' },
   },
   {
-    slug: 'lovers',
-    artist: 'Klaus Stille',
-    name: 'Lovers',
-    imageSource: './assets/art/lovers.jpg',
-    year: '2021',
-    genre: 'Linoprint',
-    colors: ['#29292A', '#3E3E42', '#585859', '#807F7F', '#CECCCA'],
-    dimensions: { height: 2679, width: 1920, type: 'jpg' },
-  },
-  {
     slug: 'umbilical-ambiguity',
     artist: 'Klaus Stille',
     name: 'Umbilical Ambiguity',
