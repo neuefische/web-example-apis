@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/djfarly/fetch-me#readme",
   "dependencies": {
+    "@upstash/redis": "^1.41.0",
     "@vercel/node": "^5.9.5",
     "tumult": "^3.0.14"
   }
