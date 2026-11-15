@@ -39,6 +39,17 @@ const redis =
     : undefined;
 const memory = new Map<string, { state: WatchlistState; expires: number }>();
 
+// Every route is its own serverless function with its own memory, so the in-memory fallback
+// would silently lose data between routes. Fail loudly instead when deployed without Redis.
+function assertStorage() {
+  if (!redis && process.env.VERCEL) {
+    throw new HttpError(
+      503,
+      'Storage is not configured: connect an Upstash Redis database to this Vercel project',
+    );
+  }
+}
+
 const storageKey = (key: string) => `watchlist:${key}`;
 
 async function loadState(key: string): Promise<WatchlistState | null> {
@@ -139,6 +150,8 @@ export function route(
           'The key in the URL must be 3 to 32 characters: lowercase letters, digits and "-"',
         );
       }
+
+      assertStorage();
 
       let state: WatchlistState | null = null;
       let isNew = false;
