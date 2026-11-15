@@ -99,3 +99,40 @@ Retrieve a list of artworks:
 ```
 https://example-apis.vercel.app/api/art
 ```
+
+## 🎬 Watchlist
+
+A movie watchlist you can read **and write**. Every person picks their own `[key]` (3 to 32 characters: lowercase letters, digits and `-`, for example your first name). The first request with a new key creates your own copy with five movies. Your data is deleted after 24 hours without a change.
+
+Base URL: `https://example-apis.vercel.app/api/watchlist/[key]`
+
+A movie looks like this: `{ "id": 1, "title": "Spirited Away", "year": 2001, "watched": true }`
+
+| Method   | Path                    | What it does                                         | Success                         |
+| -------- | ----------------------- | ---------------------------------------------------- | ------------------------------- |
+| `GET`    | `/movies`               | List all movies, optional filter `?watched=true`     | `200`                           |
+| `POST`   | `/movies`               | Create a movie (`title`, `year`, optional `watched`) | `201` with `Location` header    |
+| `GET`    | `/movies/[id]`          | Read one movie                                       | `200`                           |
+| `PUT`    | `/movies/[id]`          | Replace a movie (`title`, `year` and `watched`)      | `200`                           |
+| `PATCH`  | `/movies/[id]`          | Change parts of a movie                              | `200`                           |
+| `DELETE` | `/movies/[id]`          | Delete a movie and its notes                         | `204`                           |
+| `GET`    | `/movies/[id]/notes`    | List the notes of a movie                            | `200`                           |
+| `POST`   | `/movies/[id]/notes`    | Add a note (`text`)                                  | `201` with `Location` header    |
+| `DELETE` | `/` (the key itself)    | Reset your watchlist to the five starting movies     | `204`                           |
+
+Requests with a body need the header `Content-Type: application/json`.
+
+Errors are JSON like `{ "error": "Invalid movie", "details": ["year is required"] }`:
+
+| Status | When                                                                  |
+| ------ | --------------------------------------------------------------------- |
+| `400`  | Invalid JSON, missing or invalid fields, invalid key                  |
+| `404`  | The movie does not exist (for example after it was deleted)           |
+| `405`  | The URL exists, but not for this method (see the `Allow` header)      |
+| `409`  | Limit reached (50 movies, 20 notes per movie)                         |
+| `413`  | The request body is larger than 1 KB                                  |
+| `415`  | `Content-Type` is missing or not `application/json`                   |
+
+```
+https://example-apis.vercel.app/api/watchlist/your-name/movies
+```
